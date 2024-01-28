@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFusion 2024 Registration</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TechFusion 2024 Registration Form</h1>
+    
+    <form action="#" method="post">
+        <!-- Personal Details -->
+        <label for="firstName">First Name*:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Last Name*:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone*:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]+" minlength="10" maxlength="10" required>
+        
+        <!-- Profile Type -->
+        <fieldset>
+            <legend>Profile Type*</legend>
+            <label><input type="radio" name="profileType" value="Professional" required> Professional</label>
+            <label><input type="radio" name="profileType" value="Student"> Student</label>
+            <label><input type="radio" name="profileType" value="Enthusiast"> Enthusiast</label>
+        </fieldset>
+        
+        <!-- Areas of Interest -->
+        <label for="domain">Primary Domain of Interest*:</label>
+        <select id="domain" name="domain" required>
+            <option value="">--Please choose a domain--</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+        </select>
+        
+        <!-- Workshops -->
+        <fieldset>
+            <legend>Workshops:</legend>
+            <label><input type="checkbox" name="workshop[]" value="Intro to Quantum Computing"> Intro to Quantum Computing</label>
+            <label><input type="checkbox" name="workshop[]" value="Virtual Reality on the Web"> Virtual Reality on the Web</label>
+            <label><input type="checkbox" name="workshop[]" value="Cybersecurity 101"> Cybersecurity 101</label>
+            <label><input type="checkbox" name="workshop[]" value="AI in Medical Imaging"> AI in Medical Imaging</label>
+        </fieldset>
+        
+        <!-- Additional Information -->
+        <label for="additionalInfo">Additional Information (max 300 characters):</label>
+        <textarea id="additionalInfo" name="additionalInfo" maxlength="300"></textarea>
+        
+        <!-- Preferred Days -->
+        <fieldset>
+            <legend>Preferred Days:</legend>
+            <label><input type="checkbox" name="preferredDays[]" value="Day 1"> Day 1</label>
+            <label><input type="checkbox" name="preferredDays[]" value="Day 2"> Day 2</label>
+            <label><input type="checkbox" name="preferredDays[]" value="Day 3"> Day 3</label>
+        </fieldset>
+        
+        <!-- Meal Preference -->
+        <fieldset>
+            <legend>Meal Preference:</legend>
+            <label><input type="radio" name="mealPreference" value="Vegetarian"> Vegetarian</label>
+            <label><input type="radio" name="mealPreference" value="Non-Vegetarian"> Non-Vegetarian</label>
+            <label><input type="radio" name="mealPreference" value="Vegan"> Vegan</label>
+            <label><input type="radio" name="mealPreference" value="No Preference"> No Preference</label>
+        </fieldset>
+        
+        <!-- Terms & Conditions -->
+        <label><input type="checkbox" name="termsAndConditions" required> I agree to the terms and conditions*</label>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
