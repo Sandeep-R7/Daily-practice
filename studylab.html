@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Oswald:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body{
+            font-family: "Oswald";
+            margin: 20px;
+            padding: 20px;
+        }
+        .header{
+            width: 100%;
+            height: 20vh;
+            background-color:aliceblue;
+            /* border:solid 2px red; */
+            display: flex;
+        }
+        .header>div{
+            display: flex;
+            /* border: solid 2px black; */
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        #nav{
+            margin-left: 500px;
+        }
+        #nav>div{
+            /* border: solid 2px blue; */
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+            margin-top: 35px;
+            padding: 8px;
+        }
+        #nav>div>a{
+            color: rgb(64, 64, 236);
+        }
+        .content{
+            width: 100%;
+            height: 110vh;
+            display: flex;
+            /* border: solid 2px rgb(6, 87, 17); */
+        }
+        .content>div{
+            width: 50%;
+            padding-left: 20px;
+            /* border: solid 1px red; */
+            
+        }
+        #box{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+        #box>div{
+            width: 90%;
+            /* border: solid 2px blue; */
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            gap: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: 10px;
+            
+            
+        }
+        #box>div>div{
+            width: 80%;
+            /* border : solid 2px red; */
+            border-radius: 10px;
+            box-shadow: 10px 5px 5px rgb(223, 196, 196);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div><img src="https://play-lh.googleusercontent.com/8SZB9i_McglFJh8Iii3N3f6L__7d5yEzQmb5SFMYrdSVSZIKSC8j7WGcC76r9jP1rjI" alt="studylab iamge"></div>
+        <div id="nav">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Course</a></div>
+            <div><a href="#">Instructor</a></div>
+            <div><a href="#">Blog</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <h4 style="color: rgb(64, 64, 236);">WELCOME TO STUDYLAB</h4>
+            <h1>We Are StudyLab An Online Learning Center</h1>
+            <p>StudyLab Development and Education Center was established in 2019 by highly-experienced coaches and business professionals to serve the needs of people in achieving consistently high performance in pressure-packed competition environments. It is the philosophy of StudyLab that Human of 21st Century should pursue a goal to learn, develop and increase his/her possibilities.</p>
+            <iframe width="224" height="126" src="https://www.youtube.com/embed/66XRUiI92vU?si=IAjtNkiQkC5LzR3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <span>Learn anything from StudyLab <br> Watch video</span>
+        </div>
+        <div id="box">
+            <div>
+                <div><span class="material-symbols-outlined">
+                    content_paste_search
+                    </span><h2>World Class Quize</h2><p>Default value. The length is equal to the length of the flexible item.</p></div>
+                <div><span class="material-symbols-outlined">
+                    content_paste_search
+                    </span><h2>World Class Quize</h2><p>Default value. The length is equal to the length of the flexible item.</p></div>
+            </div>
+            <div>
+                <div><span class="material-symbols-outlined">
+                    content_paste_search
+                    </span><h2>World Class Quize</h2><p>Default value. The length is equal to the length of the flexible item.</p></div>
+                <div><span class="material-symbols-outlined">
+                    content_paste_search
+                    </span><h2>World Class Quize</h2><p>Default value. The length is equal to the length of the flexible item.</p></div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

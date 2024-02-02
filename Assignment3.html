@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFusion 2024</title>
+</head>
+<body>
+    <h1> Registration Form </h1>
+    <div>
+        <h4> Personal details</h4>
+        <form> 
+            <label for = "name">Name:</label>
+            <input type="text" id="name" name="username" required>
+            <br>
+            <label for="email"> Email:</label> 
+            <input type="email" id="email" required>
+            <br>
+            <label for="phone"> Phone:</label>
+            <input type ="tel" id="phone" minlength="10" maxlength=" 10" required>
+            <br>
+            <fieldset>
+                <legend>Type of attendee:</legend>
+              
+                <div>
+                  <input type="radio" id="pr" name="drone" value="Professional" checked />
+                  <label for="pr">Professional</label>
+                </div>
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="Student" />
+                  <label for="dewey">Student</label>
+                </div>
+                <div>
+                  <input type="radio" id="louie" name="drone" value="Enthusiast" />
+                  <label for="louie">Enthusiast</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Area of intrest</legend>
+                <select name="domain" id="domain-select" required>
+                    <option value="">--Please choose a domain--</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Cybersecurity">Cybersecurity</option> 
+                    </select>   
+              </fieldset>
+        </form>
+    </div>
+    <fieldset>
+        <legend>Workshops:</legend>
+            <div>
+              <input type="checkbox" id="i1" name="Intro to Quantum Computing" checked />
+              <label for="i1">Intro to Quantum Computing</label>
+            </div>
+            <div>
+              <input type="checkbox" id="i2" name="Virtual Reality on the Web" />
+              <label for="i2">Virtual Reality on the Web</label>
+            </div>
+            <div>
+                <input type="checkbox" id="i3" name="Cybersecurity 10" />
+                <label for="i3">Cybersecurity 10</label>
+              </div>
+              <div>
+                <input type="checkbox" id="i4" name="AI in Medical Imaging" />
+                <label for="i4">AI in Medical Imaging </label>
+              </div>
+    </fieldset>
+</body>
+</html>

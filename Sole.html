@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap">
+    <title>Layout Example</title>
+</head>
+<body>
+
+<div class="gifting-deal">
+    <p style="font-style: italic; text-align: center;">The Gifting deal message is here</p>
+</div>
+
+<div class="flower-video">
+    <video controls>
+        <source src="flow.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="categories">
+    <div class="category-item">
+        <img src="https://www.milton.in/cdn/shop/collections/1.png?v=1699940482&width=720" alt="Category 1">
+    </div>
+    <div class="category-item">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Category 2">
+    </div>
+    <!-- Add more category items as needed -->
+</div>
+
+<div class="shop-by-brand">
+    <div class="brand-item">Brand 1</div>
+    <div class="brand-item">Brand 2</div>
+    <div class="brand-item">Brand 3</div>
+    <div class="brand-item">Brand 4</div>
+</div>
+
+<div class="contact">
+    <h2>Contact</h2>
+    <img src="back.png" alt="Background Image" class="contact-background">
+</div>
+
+<form class="registration-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" minlength="4" maxlength="8" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="pet">Choose Pet:</label>
+    <select id="pet" name="pet">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="fish">Fish</option>
+    </select>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="food">Choose Food:</label>
+    <select id="food" name="food" multiple>
+        <option value="pizza">Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="sushi">Sushi</option>
+    </select>
+
+    <label for="file">Add File:</label>
+    <input type="file" id="file" name="file">
+
+    <div class="submit-button">
+        <input type="submit" value="Submit" onclick="validateForm()">
+    </div>
+</form>
+
+<script>
+    function validateForm() {
+        // Perform validation and show prompt if mandatory fields are not filled
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if (!name || !email || !password) {
+            alert("Please fill in all mandatory fields.");
+        } else {
+            alert("Form submitted successfully!");
+        }
+    }
+</script>
+
+</body>
+</html>
