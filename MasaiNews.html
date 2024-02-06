@@ -4,15 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box{
+          background-color: beige;
+        }
+        .grid {
+            display: grid;
+            height: 63vh;
+            width: 90%;
+            grid-gap: 100px;
+            grid-template-columns: repeat(3,1fr);
+            align-items:center;
+            margin-left: 5%;
+            
+        }
+        .grid__item {
+            background-color: #fff;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+            /* border: solid 4px black; */
+        }
+        .grid__item:hover {
+            transform: translateY(-0.5%);
+            box-shadow: 0 32px 64px rgba(0, 0, 0, 0.2);
+        }
+
+        .card__img {
+            display: block;
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .card__content {
+            padding: 0px 20px 0px 20px;
+            /* border: solid 2px red; */
+        }
+        .card__header{
+          text-align: center;
+        }
+        button{
+          position: relative;
+          left: 50%;
+          border: solid 2px red;
+          border-radius: 5px;
+          color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <h1>Masai In The News</h1>
+        <h1 style="text-align: center;">Masai In The News</h1>
     </div>
     <div class="box">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="grid">
+            <div class="grid__item">
+              <div class="card"><img class="card__img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg" alt="img">
+                <div class="card__content">
+                  <h4 class="card__header">Unitus Ventures Leads Pre-Series A Funding For Coding-Focussed Masai School</h4>
+                  <p class="card__text">Unitus Ventures Leads Pre-Series A Funding For Coding-Focussed Masai School. </p> 
+                </div>
+              </div>
+            </div>
+            <div class="grid__item">
+              <div class="card"><img class="card__img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg" alt="img">
+                <div class="card__content">
+                  <h4 class="card__header">Unitus Ventures Leads Pre-Series A Funding For Coding-Focussed Masai School</h4>
+                  <p class="card__text">Unitus Ventures Leads Pre-Series A Funding For Coding-Focussed Masai School. </p> 
+                </div>
+              </div>
+            </div>
+            <div class="grid__item">
+              <div class="card"><img class="card__img" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg" alt="img">
+                <div class="card__content">
+                  <h4 class="card__header">Unitus Ventures Leads Pre-Series A Funding For Coding-Focussed Masai School</h4>
+                  <p class="card__text">Unitus Ventures Leads Pre-Series A Funding For Coding-Focussed Masai School. </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <button class="card__btn">Explore <span>&rarr;</span></button>
     </div>
 </body>
 </html>
